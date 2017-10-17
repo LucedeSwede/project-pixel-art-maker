@@ -6,12 +6,12 @@
 
 $('.inputSubmit').click(function () {
     $('.pixelCanvas').append(function makeGrid() {
-        const inputHeight = $('.inputHeight').val();
-        const inputWidth = $('.inputWidth').val();
+        const INPUT_HEIGHT = $('.inputHeight').val();
+        const INPUT_WIDTH = $('.inputWidth').val();
         let table = "";
-        for (i = 0; i < inputHeight; i++) {
+        for (i = 0; i < INPUT_HEIGHT; i++) {
             table += "<tr>";
-            for (j = 0; j < inputWidth; j++) {
+            for (j = 0; j < INPUT_WIDTH; j++) {
                 table += "<td></td>";
             }
             table += "</tr>";
