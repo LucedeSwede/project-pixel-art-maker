@@ -21,5 +21,5 @@ $('#input_submit').click(function () {
 });
 
 $('#pixel_canvas').on('click', 'td', function () {
-    $(this).toggleClass('colored');
+    $(this).css('background-color', $('#colorPicker').val());
 });
