@@ -19,3 +19,7 @@ $('#input_submit').click(function () {
         return table;
     });
 });
+
+$('#pixel_canvas').on('click', 'td', function () {
+    $(this).toggleClass('colored');
+});
