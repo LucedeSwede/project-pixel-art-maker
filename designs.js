@@ -18,6 +18,7 @@ $('#input_submit').click(function () {
         }
         return table;
     });
+    $('#input_submit').remove();
 });
 
 $('#pixel_canvas').on('click', 'td', function () {
