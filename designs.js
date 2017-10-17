@@ -19,6 +19,7 @@ $('#input_submit').click(function () {
         return table;
     });
     $('#input_submit').remove();
+    $('#sizePicker').append('<input type="button" class="startOver" value="Start Over!" onclick="window.location.reload()">');
 });
 
 $('#pixel_canvas').on('click', 'td', function () {
