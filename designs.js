@@ -3,8 +3,8 @@
 
 // When size is submitted by the user, call makeGrid()
 
-function makeGrid() {
 
-// Your code goes here!
-
-}
+$('#input_submit').click(function makeGrid() {
+    $('#pixel_canvas').append('<tr><td></td><td></td></tr>');
+    return false;
+});
