@@ -39,6 +39,6 @@ input[type=number] {
     width: 6em;
 }
 
-#input_submit, .startOver {
+.inputSubmit, .startOver {
     margin-top: 15px;
 }
