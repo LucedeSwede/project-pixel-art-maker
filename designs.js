@@ -4,7 +4,18 @@
 // When size is submitted by the user, call makeGrid()
 
 
-$('#input_submit').click(function makeGrid() {
-    $('#pixel_canvas').append('<tr><td></td><td></td></tr>');
-    return false;
+$('#input_submit').click(function () {
+    $('#pixel_canvas').append(function makeGrid() {
+        const inputHeight = $('#input_height').val();
+        const inputWidth = $('#input_width').val();
+        let table = "";
+        for (i = 0; i < inputHeight; i++) {
+            table += "<tr>";
+            for (j = 0; j < inputWidth; j++) {
+                table += "<td></td>";
+            }
+            table += "</tr>";
+        }
+        return table;
+    });
 });
